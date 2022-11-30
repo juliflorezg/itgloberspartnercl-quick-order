@@ -1,7 +1,8 @@
+#* the purpose of this query is to verify if the product exists in the first place
 query GET_PRODUCT($sku: ID!){
-  product(identifier: {field: sku, value: $sku}){
-    productId
+  product(identifier: {field: sku, value: $sku}) {
     productName
+    productId
   }
 }
 
